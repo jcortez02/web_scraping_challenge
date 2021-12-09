@@ -76,7 +76,7 @@ def mars_hemis(browser):
 
     hemisphere_image_urls = []
     for hemis in range(4):
-        browser.links.find_by_partial_text('Hemisphere')[hemis].click()
+        browser.find_by_css("a.product-item img")[hemis].click()
         html = browser.html
         hemi_soup = soup(html, 'html.parser')
         title = hemi_soup.find('h2', class_='title').text

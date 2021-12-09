@@ -72,7 +72,7 @@ hemisphere_image_urls = []
 # 3. Write code to retrieve the image urls and titles for each hemisphere.
 for hemis in range(4):
     # Browse through each article
-    browser.links.find_by_partial_text('Hemisphere')[hemis].click()
+    browser.find_by_partial_text('Hemisphere')[hemis].click()
     
     # Parse the HTML
     html = browser.html
