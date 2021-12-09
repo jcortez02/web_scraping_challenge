@@ -11,7 +11,7 @@ browser = Browser('chrome', **executable_path, headless=False)
 # Visit the mars nasa news site
 url = 'https://redplanetscience.com/'
 browser.visit(url)
-
+3
 # Delay for loading the page
 browser.is_element_present_by_css('div.list_text', wait_time=1)
 
